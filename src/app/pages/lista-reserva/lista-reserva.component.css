@@ -1,0 +1,33 @@
+/* styles.css o lista-reserva.component.css */
+.mat-table {
+    width: 100%;
+    background-color: #ffffff; /* Color de fondo blanco para la tabla */
+  }
+  
+  .mat-header-cell {
+    background-color: #3f51b5; /* Color de fondo para los encabezados */
+    color: white; /* Color del texto en los encabezados */
+    font-weight: bold; /* Negrita para el texto de los encabezados */
+    text-align: center; /* Centrar el texto en los encabezados */
+  }
+  
+  .mat-cell {
+    text-align: center; /* Centrar el texto en las celdas */
+    padding: 12px; /* Espaciado alrededor del texto */
+  }
+  
+  .mat-row:hover {
+    background-color: #f5f5f5; /* Color de fondo al pasar el mouse sobre la fila */
+  }
+  
+  .mat-paginator {
+    background-color: #f5f5f5; /* Color de fondo para el paginador */
+  }
+  
+  /* Opcional: Estilo para el contenedor de la tabla */
+  .container-sm {
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    overflow: hidden; /* Evitar que los bordes sobresalgan */
+  }
+  

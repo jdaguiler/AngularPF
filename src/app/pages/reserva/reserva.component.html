@@ -1,0 +1,65 @@
+<!-- src/app/pages/reserva/reserva.component.html -->
+<br>
+<br>
+<main class="container mx-auto mt-8 p-4 bg-white shadow-md rounded-lg">
+  <div class="flex flex-col md:flex-row">
+    <div class="md:w-1/2">
+      <img alt="Imagen de una habitación de hotel moderna y acogedora" class="rounded-lg shadow-md" height="400" src="https://storage.googleapis.com/a1aa/image/tNT9wk4bqHLIAdpO8I1bapm6DETupuRM5NQXjx9sYV4DRx6E.jpg" width="600"/>
+    </div>
+    <div class="md:w-1/2 md:pl-8 mt-4 md:mt-0">
+      <h2 class="text-3xl font-bold mb-4">
+        Reserva tu Habitación
+      </h2>
+      <form [formGroup]="reservaForm" (ngSubmit)="onSubmit()" class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-700" for="nombreCompleto">
+            Nombre Completo
+          </label>
+          <input class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" id="nombreCompleto" formControlName="nombreCompleto" required />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700" for="email">
+            Correo Electrónico
+          </label>
+          <input class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" id="email" formControlName="correo" type="email" required />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700" for="fechaEntrada">
+            Fecha de Entrada
+          </label>
+          <input class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" id="fechaEntrada" type="date" formControlName="fechaEntrada" required />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700" for="fechaSalida">
+            Fecha de Salida
+          </label>
+          <input class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" id="fechaSalida" type="date" formControlName="fechaSalida" required />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700" for="tipoHabitacion">
+            Tipo de Habitación
+          </label>
+          <select class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" id="tipoHabitacion" formControlName="tipoHabitacion" required>
+            <option value="">Seleccionar</option>
+            <option value="individual">Habitación Individual</option>
+            <option value="doble">Habitación Doble</option>
+            <option value="suite">Suite</option>
+            <option value="suite">Habitación Familiar</option>
+            <option value="suite">Habitación Deluxe</option>
+            <option value="suite">Habitación Económica</option>
+            <option value="suite">Habitación Ejecutiva</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700" for="peticionesEspeciales">
+            Peticiones Especiales
+          </label>
+          <textarea class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" id="peticionesEspeciales" formControlName="peticionesEspeciales" rows="4"></textarea>
+        </div>
+        <button class="w-full bg-green-700 text-white p-2 rounded-md shadow-md hover:bg-green-800" type="submit">
+          Reservar
+        </button>
+      </form>
+    </div>
+  </div>
+</main>
