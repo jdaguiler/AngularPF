@@ -1,10 +1,33 @@
 {
-    "routes": [
-      {
-        "route": "/*",
-        "serve": "/index.html",
-        "statusCode": 200
-      }
-    ]
-  }
-  
+  "routes": [
+    {
+      "route": "/inicio",
+      "serve": "/index.html"
+    },
+    {
+      "route": "/habitaciones",
+      "serve": "/index.html"
+    },
+    {
+      "route": "/serviciosadicionales",
+      "serve": "/index.html"
+    },
+    {
+      "route": "/fotografias",
+      "serve": "/index.html"
+    },
+    {
+      "route": "/reserva",
+      "serve": "/index.html"
+    },
+    {
+      "route": "/lista-reserva",
+      "serve": "/index.html"
+    },
+    {
+      "route": "/*",
+      "serve": "/index.html",
+      "statusCode": 200
+    }
+  ]
+}
